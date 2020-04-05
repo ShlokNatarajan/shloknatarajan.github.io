@@ -8,14 +8,12 @@ body {
 }
 
 a {
-  color: rgb(44, 44, 44);
   transition: 0.5s;
 }
 
 a:hover,
 a:active,
 a:focus {
-  color: #00ffb3bd ;
   outline: none;
   text-decoration: none;
 }
@@ -37,12 +35,16 @@ h6 {
   padding: 0;
 }
 
+h1 {
+  color: rgb(0, 25, 99);
+}
+
 /* Back to top button */
 
 .back-to-top {
   position: fixed;
   display: none;
-  background: #0099ff;
+  background: rgb(202, 0, 0);
   color: #fff;
   width: 44px;
   height: 44px;
@@ -133,9 +135,6 @@ h6 {
   line-height: 1px;
 }
 
-#topbar .social-links a:hover {
-  color: #0099ff;
-}
 
 #topbar .social-links a:first-child {
   border-left: 0;
@@ -182,11 +181,6 @@ h6 {
   text-transform: uppercase;
 }
 
-#header .logo h1 a,
-#header .logo h1 a:hover {
-  color: rgb(44, 44, 44);
-  text-decoration: none;
-}
 
 #header .logo img {
   padding: 0;
@@ -197,6 +191,19 @@ h6 {
 .main-pages {
   margin-top: 60px;
 }
+
+@media screen and (max-width: 912px) {
+  #introimage {
+    /* max-width: 500px; */
+    text-align: center;
+    margin-bottom: -5%;
+  }
+
+  #intro {
+    margin-bottom: 7%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   #introimage {
     border-radius: 10px;
@@ -204,6 +211,8 @@ h6 {
     margin-top: 5%;
   }
 }
+
+
 
 
 /*--------------------------------------------------------------
@@ -214,18 +223,17 @@ h6 {
   width: 100%;
   height: 90vh;
   position: relative;
-  /* background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat; */
+  background: #f5f8fd url("/img/cloudgreyback.png") center top no-repeat;
   background-size: cover;
-  background-image: white;
 }
 
 #intro .intro-info h2 {
-  color: rgb(44, 44, 44);
+  color: rgb(123, 78, 78);
   margin-bottom: 40px;
   font-size: 48px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #intro .intro-info h2 {
     font-size: 0.75rem;;
   }
@@ -248,9 +256,8 @@ h6 {
   border-radius: 4px;
   transition: 0.7s;
   color: #fff;
-  background-image: linear-gradient(to right, rgb(44, 44, 44) 50%, #00ffb3bd 50%);
-  background-position: 0;
-  background-size: 200%;
+  background-color: rgb(202, 0, 0);
+
 }
 
 /* #intro .intro-info .btn-get-started:hover,
@@ -261,11 +268,11 @@ h6 {
 .btnhighlight {
   transition-delay: 1.3s !important;
   background-position: -100% !important;
-  color: black !important;
 }
 
 .intro-info h1 {
   font-size: 6rem;
+  color: rgb(0, 25, 99);
 }
 
 @media screen and (max-width: 768px) {
@@ -278,6 +285,11 @@ h6 {
   #introtext {
     margin-top: 0px !important;
   }
+}
+
+#introtextcontainer {
+  width: 100% !important;
+  text-align: center !important;
 }
 
 
@@ -308,7 +320,7 @@ h6 {
 .main-nav a {
   display: block;
   position: relative;
-  color: rgb(44, 44, 44);
+  color: rgb(0, 25, 99);;
   padding: 10px 15px;
   transition: 0.3s;
   font-size: 14px;
@@ -320,7 +332,7 @@ h6 {
 .main-nav a:hover,
 .main-nav .active > a,
 .main-nav li:hover > a {
-  color: #00eba4;
+  color: rgb(202, 0, 0);
   text-decoration: none;
 }
 
@@ -354,13 +366,8 @@ h6 {
   font-size: 14px;
   font-weight: 500;
   text-transform: none;
-  color: #065e77;
 }
 
-.main-nav .drop-down ul a:hover,
-.main-nav .drop-down ul .active > a,
-.main-nav .drop-down ul li:hover > a {
-  color: #0099ff;
 }
 
 .main-nav .drop-down > a:after {
@@ -422,7 +429,7 @@ h6 {
 .mobile-nav a:hover,
 .mobile-nav .active > a,
 .mobile-nav li:hover > a {
-  color: #8dc2fa;
+  color: #fa8d8d;
   text-decoration: none;
 }
 
@@ -504,7 +511,6 @@ h6 {
 
 .section-header h3 {
   font-size: 36px;
-  color: #413e66;
   text-align: center;
   font-weight: 700;
   position: relative;
@@ -516,7 +522,6 @@ h6 {
   margin: auto;
   font-size: 15px;
   padding-bottom: 60px;
-  color: #535074;
   width: 50%;
 }
 
@@ -532,6 +537,7 @@ h6 {
 
 #about {
   padding: 0px 0;
+  background-color: #F9F8F8;
 }
 
 .aboutcontainer {
@@ -543,13 +549,11 @@ h6 {
 }
 
 #about .about-content h2 {
-  color: #413e66;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
 }
 
 #about .about-content h3 {
-  color: #696592;
   font-weight: 400;
   font-size: 22px;
   font-style: italic;
@@ -662,7 +666,6 @@ h6 {
 }
 
 #services .title a {
-  color: rgb(44, 44, 44);
 }
 
 #services .box:hover .title a {
@@ -807,7 +810,6 @@ h6 {
   padding: 6px 10px;
   font-size: 16px;
   line-height: 20px;
-  color: #413e66;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
@@ -1265,10 +1267,15 @@ h6 {
 #footer {
   padding: 0 0 30px 0;
   font-size: 14px;
-  background: #fff;
+  background: rgb(33, 56, 117);
+  color: white !important;
 }
 
-#submitbutton {
+#footer a {
+  color: white;
+}
+
+/* #submitbutton {
   font-family: 'Poppins', sans-serif;
   font-size: 13px;
   font-weight: 600;
@@ -1280,15 +1287,20 @@ h6 {
   transition: 0.7s;
   color: #fff;
   background-color: rgb(44, 44, 44);
+} */
+
+#submitbutton {
+  border: none !important;
 }
 
-#submitbutton:hover {
-  color: #00ffb3bd;
+@media screen and (max-width: 912px) {
+  .form {
+    margin-bottom: 5%;
+  }
 }
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #f5f8fd;
 }
 
 #footer .footer-top .footer-info {
@@ -1301,7 +1313,6 @@ h6 {
   padding: 2px 0 2px 0;
   line-height: 1;
   font-family: 'Poppins', sans-serif;
-  color: #413e66;
   font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -1312,13 +1323,11 @@ h6 {
   line-height: 24px;
   margin-bottom: 0;
   font-family: 'Poppins', sans-serif;
-  color: #535074;
 }
 
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #0099ff;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1331,14 +1340,12 @@ h6 {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #0a98c0;
   color: #fff;
 }
 
 #footer .footer-top h4 {
   font-size: 14px;
   font-weight: bold;
-  color: #413e66;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 10px;
@@ -1362,14 +1369,6 @@ h6 {
   padding-top: 0;
 }
 
-#footer .footer-top .footer-links ul a {
-  color: #696592;
-}
-
-#footer .footer-top .footer-links ul a:hover {
-  color: #0099ff;
-}
-
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
 }
@@ -1389,7 +1388,6 @@ h6 {
 
 #footer .footer-top .form #sendmessage {
   color: #fff;
-  background: #0099ff;
   display: none;
   text-align: center;
   padding: 15px;
@@ -1422,44 +1420,21 @@ h6 {
 }
 
 #footer .footer-top .form label {
-  color: #413e66;
   font-weight: 500;
 }
 
 #footer .footer-top .form input,
 #footer .footer-top .form textarea {
-  border-radius: 0;
+  /* border-radius: 0; */
   box-shadow: none;
-  border: 1px solid #dce1ec;
+  /* border: 1px solid #dce1ec; */
   font-size: 14px;
 }
-
-#footer .footer-top .form input::-webkit-input-placeholder,
-#footer .footer-top .form textarea::-webkit-input-placeholder {
-  color: #a2a0bd;
-}
-
-#footer .footer-top .form input::-moz-placeholder,
-#footer .footer-top .form textarea::-moz-placeholder {
-  color: #a2a0bd;
-}
-
-#footer .footer-top .form input:-ms-input-placeholder,
-#footer .footer-top .form textarea:-ms-input-placeholder {
-  color: #a2a0bd;
-}
-
-#footer .footer-top .form input::placeholder,
-#footer .footer-top .form textarea::placeholder {
-  color: #a2a0bd;
-}
-
 
 
 #footer .copyright {
   text-align: center;
   padding-top: 30px;
-  color: #535074;
   font-size: 15px;
 }
 
@@ -1467,17 +1442,7 @@ h6 {
   text-align: center;
   font-size: 14px;
   padding-top: 4px;
-  color: #8582a8;
 }
-
-#footer .credits a {
-  color: #0099ff;
-}
-
-#footer .credits a:hover {
-  color: #0a98c0;
-}
-
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
@@ -1499,10 +1464,6 @@ h6 {
   }
 }
 
-@media (min-width: 992px) {
-  #intro .intro-info {
-    padding-top: 80px;
-  }
 
   #testimonials .testimonial-item p {
     width: 80%;
@@ -1550,6 +1511,7 @@ h6 {
     top: 13px;
   }
 }
+
 
 @media (max-width: 767px) {
   #intro {
@@ -1645,18 +1607,151 @@ hr.challengebreak {
   background-position: -100%;
 }
 
+/*--------------
+Kilter Challenges
+-------------*/
 
-/************************
-Beta sign up style
-************************/
-#betasignup {
-  padding-top: 5%;
-  padding-bottom: 5%;
-  background-color: #F9F8F8;
+#challengetypes {
+  padding: 60px 0 40px 0;
+  padding-bottom: 0px;
+  background-color: white;
+}
+
+#challengetypes .box {
+  height: 100%;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 7px;
+  margin: 0 10px 20px 10px;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  background-color: white;
+}
+
+#challengetypeheader {
+  margin-bottom: 3%;
+}
+#challengetypes .box:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 
-.resp-container {
-  position: relative;
-  overflow: hidden;
+#challengetypes .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+#challengetypes .title a {
+  color: white;
+}
+
+#challengetypes .box:hover .title a {
+}
+
+#challengetypes .description {
+  font-size: 1rem;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.challengemarkers h4 {
+  text-align: center;
+  margin-bottom: 1vh;
+}
+
+#challengetypes .btn-get-started,
+#challengetypes .btn-services {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  color: #fff;
+}
+
+#challengetypes .options {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.btn-get-started:hover,
+.btn-services:hover {
+  background-color: rgb(0, 25, 99);
+  color: white !important;
+}
+
+.centered {
+  float: none;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .secondboxrow {
+    margin-top: 3%;
+  }
+}
+
+.box p {
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 912px) {
+  .padopt {
+    padding: 30px;
+  }
+}
+
+/*--------------
+Our Mission
+-------------*/
+#missioncontainer {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 912px) {
+  #missioncontainer {
+    width: 80%;
+  }
+}
+
+#missionheader {
+  text-align: center;
+}
+
+#missionheader h1 {
+  font-weight: 700;
+}
+
+#missionheader h4 {
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 912px) {
+  #missionheader h4 {
+    font-size: 18px;
+  }
+}
+
+
+#rosieimage {
+  margin-bottom: 20px;
+  width: 650px;
+}
+
+.topspacer {
+  padding-top: 150px;
 }
